@@ -1,1 +1,53 @@
 /* Header css */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap');
+
+/* Header */
+.header {
+  width: 100%;
+  max-height: 120px;
+  overflow: hidden;
+  background-color: #7e7e7e;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Logo */
+.header .logo {
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* End of Logo */
+
+.header-right {
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Fredoka', sans-serif;
+}
+
+/* Login & Join */
+.login a, .join a  {
+  font-size: 23.5px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Login */
+.login a {
+  margin-right: 50px;
+}
+
+/* End of Login */
+
+/* End of Login & Join */
+
+/* End of Header */
