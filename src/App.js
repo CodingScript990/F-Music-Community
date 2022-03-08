@@ -13,25 +13,23 @@ function App() {
     // BrowserRouter
     <BrowserRouter>
       {/* Container */}
-      <div className="Container">
-        {/* Header */}
-        <Header />
-        {/* ToastContainer */}
-        <ToastContainer />
-        {/* Routes */}
-        <Routes>
-          {/* Route(Home) */}
-          <Route path="/" element={<Home />} />
-          {/* Route(AddEdit => user create) */}
-          <Route path="/login" element={<AddEdit />} />
-          {/* Route(AddEdit => user update) */}
-          <Route path="/update/:id" element={<AddEdit />} />
-          {/* Route(View => user search) */}
-          <Route path="/view/:id" element={<View />} />
-          {/* Route(About) */}
-          <Route path="/join" element={<About />} />
-        </Routes>
-      </div>
+      {/* Header */}
+      <Header />
+      {/* ToastContainer */}
+      <ToastContainer />
+      {/* Routes */}
+      <Routes>
+        {/* Route(Home) */}
+        <Route path="/" element={<Home />} />
+        {/* Route(AddEdit => user create) */}
+        <Route path="/login" element={<AddEdit />} />
+        {/* Route(AddEdit => user update) */}
+        <Route path="/update/:id" element={<AddEdit />} />
+        {/* Route(View => user search) */}
+        <Route path="/view/:id" element={<View />} />
+        {/* Route(About) */}
+        <Route path="/join" element={<About />} />
+      </Routes>
     </BrowserRouter>
   );
 }
