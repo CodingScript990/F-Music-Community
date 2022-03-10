@@ -6,11 +6,28 @@
   display: grid;
   grid-template-columns: 1fr 450px;
   grid-template-rows: 1fr;
+  overflow: hidden;
 }
 
 .login-left {
   width: 100%;
   height: 100%;
+  position: relative;
+}
+
+.login-left::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: url('../../img/login-img4.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  opacity:0.85;
+  z-index: -1;
 }
 
 .login-right {
@@ -29,30 +46,84 @@
   grid-template-rows: 200px 1fr;
 }
 
+.login-right-title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-right-title h2 {
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #27221e;
+  padding-left: 20px;
+  padding-right: 20px;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 4px #3d3936;
+}
+
 .right-img {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 300px 1fr;
-  grid-template-rows: 300px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.img-top {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  
 }
 
 .img-left {
   width: 100%;
   height: 100%;
-  background-color: antiquewhite;
+  background-image: url('../../img/login-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #8d8d8dd5;
 }
+
+.img-left,
+.img-right,
+.img-bottom {
+  filter: blur(1.5px);
+  transition: transform 1s;
+}
+
+.img-left:hover,
+.img-right:hover,
+.img-bottom:hover {
+  transform: scale(1.05);
+  transition: transform 1s;
+  filter: blur(0);
+}
+
 
 .img-right {
   width: 100%;
   height: 100%;
-  background-color: aquamarine;
+  background-image: url('../../img/login-img2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  border: 3px solid #8d8d8dd5;
 }
 
 .img-bottom {
   width: 100%;
   height: 100%;
-  border-color: rgb(136, 113, 77);
+  background-image: url('../../img/login-img3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #8d8d8dd5;
 }
 
 /* End of Login CSS */

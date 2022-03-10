@@ -49,6 +49,12 @@
   color: #ffffff;
   text-decoration: none;
   font-family: 'Fredoka', sans-serif;
+  transition: text-shadow 1s;
+}
+
+.login a:hover, .join a:hover {
+  text-shadow: 1px 2px 3px #ffffff;
+  transition: text-shadow 1s;
 }
 
 /* End of Header */

@@ -14,7 +14,7 @@ function Join() {
           </div>
           <form className="frm-join">
             <div className="join-email">
-              <input type="email" name="email" id="email" placeholder="eamil" />
+              <input type="email" name="email" id="email" placeholder="email" />
             </div>
             <div className="join-password">
               <input type="password" name="password" placeholder="password" />
