@@ -1,70 +1,12 @@
-# Getting Started with Create React App
+## F-Music-Community[React & Node]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### [음악 커뮤니티 사이트]
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 주제 : 음악 커뮤니티 사이트
+- 기간 : 2022. 03.05 ~ ing
+- 팀원 : 1명(FE/BE)
+- 스킬 : React, Node, MySQL, Express
+- 기능 : 로그인, 회원가입, 좋아요, 댓글, 게시판[CRUD], 공지사항, 이벤트
+- 프로젝트를 하게된 이유 : 음악을 자주 듣고 좋아하다보니 기존 서비스를 좀더 나만의 공간을 가지는 것 보다는 다른 사람에게도 공유가 가능하며, 소통을 통해서 즐거움과 단합, 정보를 통해 누구에게나 즐거운 음악 커뮤니티 사이트를 만들고 싶어 시작하게 되었습니다.
+- 에러사항 & 힘들었던 점 : 리액트와 노드.js를 셋팅하는 과정부터 처음 시도를 하다보니 잘 안되는 부분이 많았고 현재는 로그인, 회원가입 디자인을 진행중에 있어 완성하는데로 작성할 계획 입니다.
+- 사용한 기술스텍 : React => React-router-dom, Axios, React-Hook / Node => CRUD[get, post, delete, put], express, filter, find
