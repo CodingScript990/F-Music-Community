@@ -5,7 +5,33 @@ import "./Login.css";
 function Login() {
   return (
     <div className="login-container">
-      <div className="login-left"></div>
+      <div className="login-left">
+        <div className="login-left-container">
+          <div className="left-title">
+            <div className="left-logo"></div>
+          </div>
+          <div className="login-frm">
+            <form className="frm-container">
+              <div className="login-email">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="email"
+                />
+              </div>
+              <div className="login-password">
+                <input type="password" name="password" placeholder="password" />
+              </div>
+              <input className="login-btn" type="button" value="Login" />
+              <div className="login-others">
+                <span>ID/Password</span>
+                <span>Join</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
       <div className="login-right">
         <div className="right-container">
           <div className="login-right-title">

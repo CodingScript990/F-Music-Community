@@ -9,6 +9,14 @@ const Header = () => {
       <Link to="/" className="header-left">
         <div className="logo-img"></div>
       </Link>
+      {/* Header(Community) */}
+      <div className="header-middle">
+        <ul className="middle-items">
+          <li className="item-community">Community</li>
+          <li className="item-event">Event</li>
+          <li className="item-Notice">Notice</li>
+        </ul>
+      </div>
       {/* Header(Login) */}
       <div className="header-right">
         <div className="login">

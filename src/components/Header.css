@@ -10,13 +10,14 @@
   background-color: #3d3d3d;
   border: 3px solid #3d3d3d;
   display: grid;
-  grid-template-columns: 200px repeat(1, 200px);
+  grid-template-columns: 200px 1fr repeat(1, 200px);
   grid-template-rows: 1fr;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
 }
 
+/* Header left */
 .header-left {
   width: 100%;
   height: 50%;
@@ -25,16 +26,65 @@
   justify-content: center;
 }
 
+/* Header logo */
 .logo-img {
   width: 100%;
   height: 100%;
   background-image: url("../img/F_Music.png");
   background-repeat: no-repeat;
   background-size: 150%;
-  background-position: center;
-  
+  background-position: center; 
 }
 
+/* End of Header logo */
+
+/* End of Header left */
+
+/* Header Middle */
+
+.header-middle {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Middle-items(ul) */
+
+.middle-items {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  gap: 130px;
+}
+
+/* Item(li) */
+
+li {
+  width: 100px;
+  height: 100%;
+  padding: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Fredoka', sans-serif;
+}
+
+/* End of Item(li) */
+
+/* End of Middle-items(ul) */
+
+/* End of Header Middle */
+
+/* Header Right */
 .header-right {
   display: flex;
   flex-wrap: wrap;
@@ -56,5 +106,7 @@
   text-shadow: 1px 2px 3px #ffffff;
   transition: text-shadow 1s;
 }
+
+/* End of Header Right */
 
 /* End of Header */

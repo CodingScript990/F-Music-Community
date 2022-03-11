@@ -1,5 +1,6 @@
 /* Login CSS */
 
+/* Container */
 .login-container {
   width: 100%;
   height: 100%;
@@ -9,9 +10,13 @@
   overflow: hidden;
 }
 
+/* Login Left */
+
 .login-left {
   width: 100%;
   height: 100%;
+  display: grid;
+  grid-template-rows: 100px 1fr;
   position: relative;
 }
 
@@ -30,6 +35,103 @@
   z-index: -1;
 }
 
+.login-left-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 200px 1fr;
+}
+
+/* Left Title */
+
+.left-title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Left Logo */
+
+.left-logo {
+  width: 350px;
+  height: 300px;
+  background-image: url('../../img/F_Music\(login-logo\).png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* End of Left Logo */
+
+/* End of Left Title */
+
+/* Login Form */
+
+.login-frm {
+  width: 100%;
+  height: 100%;
+}
+
+.frm-container {
+  width: 50%;
+  height: 500px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Login Email */
+
+.login-email {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(196, 103, 103);
+}
+
+/* End of Login Email */
+
+/* Login Password */
+
+.login-password {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(196, 103, 103);
+}
+
+/* End of Login Password */
+
+/* Login Button */
+
+.login-btn {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(196, 103, 103);
+}
+
+/* End of Login Button */
+
+/* Login Others */
+
+.login-others {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(216, 107, 107);
+}
+
+/* End of Login Others */
+
+/* End of Login Form */
+
+/* End of Login Left */
+
+/* Login Right */
+
 .login-right {
   width: 100%;
   height: 100%;
@@ -45,6 +147,8 @@
   grid-template-columns: 1fr;
   grid-template-rows: 200px 1fr;
 }
+
+/* Right Title */
 
 .login-right-title {
   width: 100%;
@@ -64,6 +168,12 @@
   text-shadow: 1px 1px 4px #3d3936;
 }
 
+/* End of Right Title */
+
+/* Right Image */
+
+/* Image Common */
+
 .right-img {
   width: 100%;
   height: 100%;
@@ -71,6 +181,25 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.img-left,
+.img-right,
+.img-bottom {
+  filter: blur(1.5px);
+  transition: transform 1s;
+}
+
+.img-left:hover,
+.img-right:hover,
+.img-bottom:hover {
+  transform: scale(1.05);
+  transition: transform 1s;
+  filter: blur(0);
+}
+
+/* End of Image Common */
+
+/* Image Top */
 
 .img-top {
   width: 100%;
@@ -90,22 +219,6 @@
   border: 3px solid #8d8d8dd5;
 }
 
-.img-left,
-.img-right,
-.img-bottom {
-  filter: blur(1.5px);
-  transition: transform 1s;
-}
-
-.img-left:hover,
-.img-right:hover,
-.img-bottom:hover {
-  transform: scale(1.05);
-  transition: transform 1s;
-  filter: blur(0);
-}
-
-
 .img-right {
   width: 100%;
   height: 100%;
@@ -116,6 +229,10 @@
   border: 3px solid #8d8d8dd5;
 }
 
+/* End of Image Top */
+
+/* Image Bottom */
+
 .img-bottom {
   width: 100%;
   height: 100%;
@@ -125,5 +242,13 @@
   background-position: center;
   border: 3px solid #8d8d8dd5;
 }
+
+/* End of Image Bottom */
+
+/* End of Right Image */
+
+/* End of Login Right */
+
+/* Container */
 
 /* End of Login CSS */
