@@ -1,14 +1,14 @@
 // server.js
 // database module
-import fs from "fs";
+const fs = require("fs");
 // express module
-import express from "express";
+const express = require("express");
 // bodyParser value
-import bodyParser from "body-parser";
+const bodyParser = require("body-parser");
 // cors module
-import cors from "cors";
+const cors = require("cors");
 // mysql module
-import mysql from "mysql";
+const mysql = require("mysql");
 // userRoute
 import userRoute from "./routes/usersRoute.js";
 
