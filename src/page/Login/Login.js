@@ -23,10 +23,12 @@ function Login() {
               <div className="login-password">
                 <input type="password" name="password" placeholder="password" />
               </div>
-              <input className="login-btn" type="button" value="Login" />
+              <div className="login-button">
+                <input className="login-btn" type="button" value="Login" />
+              </div>
               <div className="login-others">
-                <span>ID/Password</span>
-                <span>Join</span>
+                <span>Forgot password?</span>
+                <span>Sign Up</span>
               </div>
             </form>
           </div>

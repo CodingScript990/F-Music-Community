@@ -31,7 +31,6 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  opacity:0.85;
   z-index: -1;
 }
 
@@ -91,7 +90,13 @@
 .login-email {
   width: 100%;
   height: 100%;
-  background-color: rgb(196, 103, 103);
+}
+
+.login-email input[type="email"] {
+  width: 400px;
+  height: 47px;
+  box-shadow: 0 0 11px 2px #9c9b9bd5;
+  border: none;
 }
 
 /* End of Login Email */
@@ -101,17 +106,28 @@
 .login-password {
   width: 100%;
   height: 100%;
-  background-color: rgb(196, 103, 103);
+}
+
+.login-password input[type="password"] {
+  width: 400px;
+  height: 47px;
+  box-shadow: 0 0 11px 2px #bbbbbbd5;
+  border: none;
 }
 
 /* End of Login Password */
 
 /* Login Button */
 
-.login-btn {
+.login-button {
   width: 100%;
-  height: 100%;
-  background-color: rgb(196, 103, 103);
+  height: 50%;
+}
+
+.login-button .login-btn {
+  width: 400px;
+  height: 47px;
+  margin: 0 auto;
 }
 
 /* End of Login Button */
@@ -121,7 +137,22 @@
 .login-others {
   width: 100%;
   height: 100%;
-  background-color: rgb(216, 107, 107);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.login-others span {
+  width: 100%;
+  height: 100%;
+  font-size: 15.56px;
+  font-weight: bold;
+  color: #6d6b6be7;
+  text-shadow: 0 0 1px #333131;
+  cursor: pointer;
+}
+
+.login-others span:hover {
+  text-decoration: underline;
 }
 
 /* End of Login Others */

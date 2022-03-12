@@ -84,23 +84,16 @@
   height: 100%;
 }
 
-/* Common input(style)  */
-
-input {
-  width: 400px;
-  height: 47px;
-  padding: 10px;
-  font-size: 15.5px;
-  border-radius: 5px;
-}
-
-/* End of Common input(style)  */
-
 /* Join input(email, password, text) */
 
 input[type="email"],
 input[type="password"],
 input[type="text"] {
+  width: 400px;
+  height: 47px;
+  padding: 10px;
+  font-size: 15.5px;
+  border-radius: 5px;
   border: none;
   border-radius: 3px;
   outline-color: #615c5c;
@@ -139,7 +132,10 @@ input[type="button"],
 input[type="submit"] {
   width: 120px;
   height: 40.5px;
+  padding: 10px;
+  font-size: 15.5px;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
   color: #ffffff;
   font-size: 16px;
