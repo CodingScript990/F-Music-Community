@@ -1,0 +1,285 @@
+/* Login CSS */
+
+/* Container */
+.login-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 450px;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+}
+
+/* Login Left */
+
+.login-left {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  position: relative;
+}
+
+.login-left::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: url('../../img/login-img4.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  z-index: -1;
+}
+
+.login-left-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 200px 1fr;
+}
+
+/* Left Title */
+
+.left-title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Left Logo */
+
+.left-logo {
+  width: 350px;
+  height: 300px;
+  background-image: url('../../img/F_Music\(login-logo\).png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* End of Left Logo */
+
+/* End of Left Title */
+
+/* Login Form */
+
+.login-frm {
+  width: 100%;
+  height: 100%;
+}
+
+.frm-container {
+  width: 50%;
+  height: 500px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Login Email */
+
+.login-email {
+  width: 100%;
+  height: 100%;
+}
+
+.login-email input[type="email"] {
+  width: 400px;
+  height: 47px;
+  box-shadow: 0 0 11px 2px #9c9b9bd5;
+  border: none;
+}
+
+/* End of Login Email */
+
+/* Login Password */
+
+.login-password {
+  width: 100%;
+  height: 100%;
+}
+
+.login-password input[type="password"] {
+  width: 400px;
+  height: 47px;
+  box-shadow: 0 0 11px 2px #bbbbbbd5;
+  border: none;
+}
+
+/* End of Login Password */
+
+/* Login Button */
+
+.login-button {
+  width: 100%;
+  height: 50%;
+}
+
+.login-button .login-btn {
+  width: 400px;
+  height: 47px;
+  margin: 0 auto;
+}
+
+/* End of Login Button */
+
+/* Login Others */
+
+.login-others {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.login-others span {
+  width: 100%;
+  height: 100%;
+  font-size: 15.56px;
+  font-weight: bold;
+  color: #6d6b6be7;
+  text-shadow: 0 0 1px #333131;
+  cursor: pointer;
+}
+
+.login-others span:hover {
+  text-decoration: underline;
+}
+
+/* End of Login Others */
+
+/* End of Login Form */
+
+/* End of Login Left */
+
+/* Login Right */
+
+.login-right {
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1d5;
+  border-left: 1px solid #cececed5;
+  box-shadow: 9px 14px 7px 10px #bdbcbcd5;
+}
+
+.right-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px 1fr;
+}
+
+/* Right Title */
+
+.login-right-title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-right-title h2 {
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #27221e;
+  padding-left: 20px;
+  padding-right: 20px;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 4px #3d3936;
+}
+
+/* End of Right Title */
+
+/* Right Image */
+
+/* Image Common */
+
+.right-img {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.img-left,
+.img-right,
+.img-bottom {
+  filter: blur(1.5px);
+  transition: transform 1s;
+}
+
+.img-left:hover,
+.img-right:hover,
+.img-bottom:hover {
+  transform: scale(1.05);
+  transition: transform 1s;
+  filter: blur(0);
+}
+
+/* End of Image Common */
+
+/* Image Top */
+
+.img-top {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  
+}
+
+.img-left {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../img/login-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #8d8d8dd5;
+}
+
+.img-right {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../img/login-img2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  border: 3px solid #8d8d8dd5;
+}
+
+/* End of Image Top */
+
+/* Image Bottom */
+
+.img-bottom {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../img/login-img3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #8d8d8dd5;
+}
+
+/* End of Image Bottom */
+
+/* End of Right Image */
+
+/* End of Login Right */
+
+/* Container */
+
+/* End of Login CSS */

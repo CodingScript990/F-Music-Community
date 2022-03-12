@@ -1,42 +1,31 @@
 // Header.js
-import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
-  // nav item(home)
-  const [activeTab, setActiveTab] = "Home";
   return (
     <div className="header">
-      <p className="logo">User Management System</p>
+      <Link to="/" className="header-left">
+        <div className="logo-img"></div>
+      </Link>
+      {/* Header(Community) */}
+      <div className="header-middle">
+        <ul className="middle-items">
+          <li className="item-community">Community</li>
+          <li className="item-event">Event</li>
+          <li className="item-Notice">Notice</li>
+        </ul>
+      </div>
+      {/* Header(Login) */}
       <div className="header-right">
-        {/* Header(Home) */}
-        <Link to="/">
-          <p
-            className={`${activeTab === "Home" ? "active" : ""}`}
-            onClick={() => setActiveTab("Home")}
-          >
-            Home
-          </p>
-        </Link>
-        {/* Header(Adduser) */}
-        <Link to="/add">
-          <p
-            className={`${activeTab === "Adduser" ? "active" : ""}`}
-            onClick={() => setActiveTab("Adduser")}
-          >
-            Adduser
-          </p>
-        </Link>
-        {/* Header(About) */}
-        <Link to="/about">
-          <p
-            className={`${activeTab === "About" ? "active" : ""}`}
-            onClick={() => setActiveTab("About")}
-          >
-            About
-          </p>
-        </Link>
+        <div className="login">
+          <Link to="/login">LOGIN</Link>
+        </div>
+        {/* Header(Join) */}
+        <div className="join">
+          <Link to="/join">JOIN</Link>
+        </div>
       </div>
     </div>
   );
