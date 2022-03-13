@@ -19,11 +19,8 @@ function Join() {
             <div className="join-password">
               <input type="password" name="password" placeholder="password" />
             </div>
-            <div className="join-password2">
-              <input type="password" name="password2" placeholder="password2" />
-            </div>
             <div className="join-name">
-              <input type="text" name="name" placeholder="name" />
+              <input type="text" name="nickname" placeholder="nickname" />
             </div>
             <div className="join-btn">
               <input type="button" value="Cancel" />

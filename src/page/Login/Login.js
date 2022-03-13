@@ -1,8 +1,22 @@
 // AddEdit.js
-import React from "react";
+import React, { useState } from "react";
 import "./Login.css";
 
 function Login() {
+  // login id
+  const [id, setId] = useState("");
+  // login password
+  const [pwd, setPwd] = useState("");
+  // login API
+  if (id === "" || pwd === "") {
+    window.alert("Please enter your ID and password.");
+    return;
+  }
+  // check id
+  if (!emailCheck(id)) {
+    window.alert("The email format is not correct.");
+  }
+  dispatch(userAction.loginDB(id, pwd));
   return (
     <div className="login-container">
       <div className="login-left">
@@ -13,15 +27,22 @@ function Login() {
           <div className="login-frm">
             <form className="frm-container">
               <div className="login-email">
-                <input
+                <Input
+                  onChange={(e) => {
+                    setId(e.target.value);
+                  }}
                   type="email"
-                  name="email"
-                  id="email"
                   placeholder="email"
                 />
               </div>
               <div className="login-password">
-                <input type="password" name="password" placeholder="password" />
+                <Input
+                  onChange={(e) => {
+                    setId(e.target.value);
+                  }}
+                  type="password"
+                  placeholder="password"
+                />
               </div>
               <div className="login-button">
                 <input className="login-btn" type="button" value="Login" />
